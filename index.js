@@ -32,7 +32,7 @@ import {studentsArr} from "/data.js"
 const countAverage = (studentsArr) => {
     const totalCount = studentsArr.reduce((total, currentElement)=>{
         console.log(total + currentElement.grade)
-        return total + currentElement.grade //the return and måsvingar can be removed as a oneliner
+        return total + currentElement.grade //the return and måsvingar can be removed as a oneliner function but otherwise it is a function (even though anonymous) so you have to have return there
     },0) //the zero makes the first object in the array 0
 
     return totalCount / studentsArr.length //average
