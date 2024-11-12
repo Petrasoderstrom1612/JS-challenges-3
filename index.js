@@ -40,3 +40,15 @@ const countAverage = (studentsArr) => {
 
 console.log(countAverage(studentsArr))
 
+/*---------------------------------------------------------------------------*/
+
+import {itemsBoughtArr} from "./itemsBoughtArr.js"
+
+const sumUpFunction = (arr, discount=0) => {
+const countTotal = arr.reduce((total, currentElement) => {
+   return total + currentElement.priceUSD
+},0)
+return countTotal - discount
+}
+
+console.log(sumUpFunction(itemsBoughtArr, 3))
