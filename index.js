@@ -48,7 +48,8 @@ const sumUpFunction = (arr, discount=0) => {
 const countTotal = arr.reduce((total, currentElement) => {
    return total + currentElement.priceUSD
 },0)
-return countTotal - discount
+
+return countTotal 
 }
 
-console.log(sumUpFunction(itemsBoughtArr, 3))
+console.log(sumUpFunction(itemsBoughtArr)) //now the code will work even if you forget at write discount as a second argument here
