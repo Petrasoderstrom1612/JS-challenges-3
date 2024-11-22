@@ -25,6 +25,7 @@ const average = grades.reduce((total, currentElement,index)=>{
 
 console.log(average)
 
+/*-- REDUCE FROM ARRAY OF OBJECTS--*/
 /*---------------------------------------------------------------------------*/
 
 import {studentsArr} from "/data.js"
